@@ -1,11 +1,11 @@
 html {
-  background-color: #4300ff;
+  background-color: grey;
 }
 section {
-  background-color: #4300ff;
+  background-color: grey;
 }
 #nav-container {
-  background-color: #4300ff;
+  background-color: grey;
   margin-left: 0;
   justify-self: center;
 }
@@ -20,4 +20,70 @@ section {
 }
 .nav-item {
   width: auto;
+}
+
+.hero-container {
+  height: 380px;
+  background-image: url("./images/mountains.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: soft-light;
+}
+.body {
+  padding-top: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head-cap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.head-cap > img {
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1.5);
+}
+.usmc > img {
+  height: 200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1.5);
+  grid-row: span 2;
+  align-self: center;
+  justify-self: center;
+}
+.usmc > p {
+  grid-row: span 2;
+}
+.usmc {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 10px;
+}
+.college > p {
+  grid-row: span 2;
+}
+.college {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 10px;
+}
+.college > img {
+  height: 150px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1.5);
+  grid-row: span 2;
+  align-self: center;
+  justify-self: right;
 }

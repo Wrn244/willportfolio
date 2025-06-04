@@ -15,12 +15,32 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.0.0/mdb.umd.min.js"
+    ></script>
     <my-navbar></my-navbar>
-    <section class="header">
-      <div class="text-center border-bottom">
+    <section class="hero-container">
+      <div class="text-center">
         <h1 class="display-4 fw-bold text-body-emphasis">
           William R Nelson Jr
         </h1>
@@ -32,30 +52,123 @@
         </div>
       </div>
     </section>
-    <section class="body"></section>
-    <section class="footer"></section>
+    <section class="body">
+      <div class="container">
+        <div class="head-cap">
+          <img src="./images/me.jpg" alt="William R Nelson Jr" />
+          <h2>Welcome, Traveler</h2>
+          <p>
+            You’ve stumbled upon my portfolio—whether by fate, curiosity, or a
+            well-placed Google search, I’m glad you’re here.
+            <br />
+            My name’s William, but you can call me Will or Willie. I’ve taken a
+            unique path to get here, one that’s led me to become not only a
+            skilled web developer and project manager, but also an expert in ERP
+            systems (yes, I actually enjoy untangling those complex beasts).
+            <br />
+            Take your time exploring the site—you’ll find examples of my work,
+            projects I’ve led, and probably a few Easter eggs if you look
+            closely. If you have any questions or just want to chat about code,
+            strategy, or your company’s ERP nightmares, you can find my contact
+            info on the contact page or in my résumé.
+            <br />
+            And remember, as Tolkien wisely wrote:<br />
+            <strong>“Not all those who wander are lost.”</strong>
+          </p>
+        </div>
+        <div class="container">
+          <h2>My Unexpexted Journey</h2>
+          <div class="usmc">
+            <img src="./images/ega.jpg" alt="Eagle, Globe, and Anchor" />
+
+            <p>
+              <strong>United States Marine Corps</strong><br />
+              Upon graduating highschool, in 2012, I left promptly for bootcamp.
+              I served as 0331 Machine Gunner, I obtained the rank of Corporal,
+              and I was honorably discharged in 2016. ,and was honorably
+              discharged in 2016. I served with 1st Battalion, 6th Marines, and
+              1st Battalion, 2nd Marines.
+            </p>
+          </div>
+          <div class="college">
+            <p>
+              <strong>College</strong><br />
+              After the Marines, I attended college at Robert Morris University
+              in Pittsburgh, PA. I graduated in 2020 with a Bachelor of Science
+              in Computer Information Systems. My time there was a mix of
+              learning, networking, and a few late-night coding sessions fueled
+              by coffee and determination.
+            </p>
+            <img src="./images/rmu.jpg" alt="College" />
+          </div>
+          <div class="container">
+            <h2>You're Still Here?</h2>
+            <p>
+              I appreciate your curiosity! If you’ve made it this far, you must
+              be genuinely interested in my work or just enjoy a good story.
+              Either way, I’m glad you’re here. I wanted this landing page just
+              to be very brief so please feel free to explore the rest of the
+              site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center">
+      <p>
+        &copy; 2025 William R Nelson Jr.
+        <br />
+      </p>
+    </footer>
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
     <script src="./components/navbar-component.js"></script>
   </body>
 </html>
 <script>
-  // Get current file name from URL
-  const currentPage = window.location.pathname.split("/").pop();
+  // Get just the filename (e.g., "index.html")
+  const currentFile = window.location.pathname.split("/").pop() || "index.html";
 
-  // Get all nav links
-  const navLinks = document.querySelectorAll(".nav-link");
+  // Loop through all nav links
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    const href = link.getAttribute("href").replace("./", "");
 
-  navLinks.forEach((link) => {
-    // Get href file name
-    const linkPage = link.getAttribute("href");
-
-    // If href matches current page, set it as active
-    if (
-      linkPage === currentPage ||
-      (linkPage === "./index.html" && currentPage === "")
-    ) {
+    if (href === currentFile) {
       link.classList.add("active");
     } else {
       link.classList.remove("active");
+      link.classList.add("sub");
     }
   });
+</script>
+<script>
+  let mybutton = document.getElementById("btn-back-to-top");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 </script>

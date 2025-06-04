@@ -6,21 +6,21 @@ class MyNavbar extends HTMLElement {
             <header class="container">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link sub" aria-current="page"
+                        <a href="./index.html" class="nav-link" aria-current="page"
                         >Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./about.html" class="nav-link sub">About</a>
+                        <a href="./about.html" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./projects.html" class="nav-link sub">Projects</a>
+                        <a href="./projects.html" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./resume.html" class="nav-link sub">Resume</a>
+                        <a href="./resume.html" class="nav-link">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./contact.html" class="nav-link sub">Contact</a>
+                        <a href="./contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </header>
