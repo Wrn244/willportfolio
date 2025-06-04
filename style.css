@@ -1,0 +1,23 @@
+html {
+  background-color: #4300ff;
+}
+section {
+  background-color: #4300ff;
+}
+#nav-container {
+  background-color: #4300ff;
+  margin-left: 0;
+  justify-self: center;
+}
+.active {
+  background-color: black !important;
+}
+.sub {
+  color: black !important;
+}
+.nav {
+  justify-content: center;
+}
+.nav-item {
+  width: auto;
+}
