@@ -1,18 +1,18 @@
 html {
-  background-color: #6b6b6b;
+  background-color: grey;
 }
 section {
-  background-color: #6b6b6b;
+  background-color: grey;
 }
 footer {
-  background-color: #6b6b6b;
+  background-color: grey;
   color: black;
   text-align: center;
   padding: 10px;
   border-top: 1px solid black;
 }
 #nav-container {
-  background-color: #6b6b6b;
+  background-color: grey;
   margin-left: 0;
   justify-self: center;
 }
@@ -21,17 +21,10 @@ footer {
 }
 .nav {
   justify-content: center;
-  --bs-navlink-color: black !important;
-}
-.sub {
-  color: black !important;
 }
 .nav-item {
   width: auto;
-  color: none !important;
-}
-.nav-link {
-  transition: none !important;
+  color: black !important;
 }
 
 .hero-container {
