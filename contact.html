@@ -46,22 +46,6 @@
   </body>
 </html>
 <script>
-  // Get just the filename (e.g., "index.html")
-  const currentFile = window.location.pathname.split("/").pop() || "index.html";
-
-  // Loop through all nav links
-  document.querySelectorAll(".nav-link").forEach((link) => {
-    const href = link.getAttribute("href").replace("./", "");
-
-    if (href === currentFile) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-      link.classList.add("sub");
-    }
-  });
-</script>
-<script>
   let mybutton = document.getElementById("btn-back-to-top");
 
   // When the user scrolls down 20px from the top of the document, show the button

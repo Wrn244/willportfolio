@@ -6,12 +6,12 @@ class MyNavbar extends HTMLElement {
             <header class="container">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link" aria-current="page"
+                        <a href="/" class="nav-link" aria-current="page"
                         >Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./about.html" class="nav-link">About</a>
+                        <a href="/about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
                         <a href="./projects.html" class="nav-link">Projects</a>
@@ -32,3 +32,19 @@ class MyNavbar extends HTMLElement {
 
 // Define the custom element
 customElements.define("my-navbar", MyNavbar);
+
+window.onload = function(){
+    const currentFile = window.location.pathname.split("/")[1] || "index.html";
+    console.log(window.location.pathname.split("/"));
+  // Loop through all nav links
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    const href = link.getAttribute("href").replace("/", "");
+    //console.log(href, currentFile);
+    if (href === currentFile) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+      link.classList.add("sub");
+    }
+  });
+}

@@ -19,12 +19,14 @@ footer {
 .active {
   background-color: black !important;
 }
+.sub {
+  color: black !important;
+}
 .nav {
   justify-content: center;
 }
 .nav-item {
   width: auto;
-  color: black !important;
 }
 
 .hero-container {
