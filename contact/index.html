@@ -30,7 +30,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.0.0/mdb.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../components/navbar-component.js"></script>
+    <script src="../components/highlight-nav.js" defer></script>
   </head>
   <body>
     <!-- MDB -->
@@ -42,25 +44,9 @@
     <section class="header"></section>
     <section class="body"></section>
     <section class="footer"></section>
-    <script src="./components/navbar-component.js"></script>
+    <script src="../components/navbar-component.js"></script>
   </body>
 </html>
-<script>
-  // Get just the filename (e.g., "index.html")
-  const currentFile = window.location.pathname.split("/").pop() || "index.html";
-
-  // Loop through all nav links
-  document.querySelectorAll(".nav-link").forEach((link) => {
-    const href = link.getAttribute("href").replace("./", "");
-
-    if (href === currentFile) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-      link.classList.add("sub");
-    }
-  });
-</script>
 <script>
   let mybutton = document.getElementById("btn-back-to-top");
 
