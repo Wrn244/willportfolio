@@ -32,6 +32,12 @@ footer {
 }
 .nav-link {
   transition: none !important;
+  display: block;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
 }
 
 .hero-container {
