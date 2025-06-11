@@ -32,6 +32,11 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="./components/highlight-nav.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.7.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.7.1"></script>
+    <script
+      scr="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    ></script>
   </head>
   <body>
     <!-- MDB -->
@@ -156,4 +161,17 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+</script>
+<script>
+  import { computePosition } from "https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.7.1/+esm";
+
+  const button = document.querySelector("#button");
+  const tooltip = document.querySelector("#tooltip");
+
+  computePosition(button, tooltip).then(({ x, y }) => {
+    Object.assign(tooltip.style, {
+      left: `${x}px`,
+      top: `${y}px`,
+    });
+  });
 </script>
