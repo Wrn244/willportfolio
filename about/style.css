@@ -30,3 +30,31 @@ p {
 .nav-link {
   transition: none !important;
 }
+span {
+  text-decoration: underline;
+}
+h2,
+h3 {
+  text-decoration: underline;
+}
+.body {
+  overflow-y: scroll;
+  position: relative;
+  height: calc(100vh - 60px);
+  scroll-behavior: smooth;
+}
+.navbar {
+  position: fixed;
+}
+
+.bg-light {
+  background-color: #b8b8b8 !important;
+  border-radius: 5%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 2.5);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.annoying {
+  overflow: hidden;
+}
