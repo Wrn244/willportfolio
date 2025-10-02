@@ -18,6 +18,7 @@ footer {
 }
 .active {
   background-color: black !important;
+  
 }
 .nav {
   justify-content: center;
