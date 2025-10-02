@@ -9,7 +9,7 @@ class MyNavbar extends HTMLElement {
                         <a href="/" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/about" class="nav-link">About</a>
+                        <a href="../about/index.html" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
                         <a href="/projects" class="nav-link">Projects</a>
