@@ -22,6 +22,7 @@ p {
 }
 .body {
   padding-top: 10px;
+  color: #212529;
 }
 .nav-item {
   width: auto;
@@ -57,4 +58,8 @@ h3 {
 
 .annoying {
   overflow: hidden;
+}
+
+.header {
+  color: #212529;
 }

@@ -52,9 +52,11 @@ footer {
   justify-content: center;
   align-items: center;
   background-blend-mode: soft-light;
+  color: #212529;
 }
 .body {
   padding-top: 50px;
+  color: #212529;
 }
 .container {
   display: flex;
