@@ -13,11 +13,11 @@ class MyNavbar extends HTMLElement {
         <div id="nav-container">
             <header class="container">
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="${href('index.html')}" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="${href('about/index.html')}" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="${href('projects/index.html')}" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="${href('resume/index.html')}" class="nav-link">Resume</a></li>
-                    <li class="nav-item"><a href="${href('contact/index.html')}" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="${href('/')}" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="${href('about')}" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="${href('projects')}" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="${href('resume')}" class="nav-link">Resume</a></li>
+                    <li class="nav-item"><a href="${href('contact')}" class="nav-link">Contact</a></li>
             </ul>
             </header>
         </div>
