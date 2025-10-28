@@ -5,3 +5,16 @@
 .nav-link {
   transition: none !important;
 }
+
+.header {
+  color: #212529;
+}
+
+.body {
+  height: fit-content !important;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
